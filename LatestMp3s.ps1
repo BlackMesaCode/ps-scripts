@@ -1,0 +1,1 @@
+﻿Get-ChildItem 'G:\Musik' *.mp3 -Recurse | Sort LastWriteTime, LastAccessTime -Descending | Select Name, LastWriteTime, LastAccessTime  -First 250 | Out-GridView
